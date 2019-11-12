@@ -1,0 +1,32 @@
+#base64{
+    display: none;
+}
+/*Import Font*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Montserrat&display=swap');
+
+/*Basic Styles*/
+html {
+	/*background-color: #66afe9;*/
+	background-image: url("top_hero_11_t.jpg");
+}
+
+svg {
+	fill: #f0f0f0 !important;
+	display: block;
+	margin: auto;
+	margin-bottom: -3%;
+}
+
+input, button {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+h2, h3, input {
+	font-family: 'Fira Code', monospace;
+	text-align: center;
+	color: #ffffff;
+}

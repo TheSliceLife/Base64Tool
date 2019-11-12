@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Base64 Conversion  </title>
+</head>
+<svg class="logo logo-white" id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="185px"
+height="50px" viewBox="20 25 300 66">
+<defs>
+  <style>
+    .cls-1 {
+      fill: #ffffff;
+    }
+  </style>
+</defs>
+<br/>
+<h2>Base64 Conversion Tool</h2>
+<body>
+  <h3>To get the Base64 value of a file, click "Choose File".<br/>
+    Once it is selected, you may then click "Export" 
+    to export the value into a text file.</h3>
+  <input type="file" id="files" name="files" />
+  <br/>
+  <textarea id="base64" rows="5"></textarea>
+  <button id="exportButton" style="display: none;" onclick=saveTextAsFile(base64.value,'base64Value.txt')>Export</button>
+</body> 
+<script src="./renderer.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+  function savePDF() {
+    window.print();
+  };
+  $(document).ready(function () {
+    console.log("Michael Dellone - 2019");
+  });
+</script>
+  <script type="text/javascript" src="./fileToBas64.js"></script>
+  <link rel="stylesheet" href="coolStyle.css">
+</html>
